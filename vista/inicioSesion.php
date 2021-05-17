@@ -7,7 +7,7 @@
   <br>
   <div class="row">
     <div class="col">
-      <h2>Ingrese las credenciales del Usuario</h2>
+      <h2>Ingrese las credenciales</h2>
       <form style="color: black" method="post" action="?controlador=Admin&accion=inicioSesion">
         <div  class="form-group">
           <label for="correo" >Correo de Usuario:</label>

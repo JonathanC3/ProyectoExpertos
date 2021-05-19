@@ -12,6 +12,9 @@ class ControladorPorDefecto{
         $this->view->show("vistaIndex.php", null);
                
     } // acciondefault
+    public function vistaCreditos(){
+        $this->view->show("vistaCreditos.php", null);
+    }
     
 } // fin clase
 

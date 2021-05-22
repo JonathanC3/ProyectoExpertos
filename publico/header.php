@@ -43,6 +43,8 @@
                 </li>
                 <li class="nav-item text-center">
                     <a class="nav-link" href="?controlador=PorDefecto&accion=vistaCreditos">Créditos</a>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="?controlador=PorDefecto&accion=vistaLogin">Login</a>
                 </li>
             </ul>
         </nav>

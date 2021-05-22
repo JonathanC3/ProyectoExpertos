@@ -18,7 +18,7 @@
           <input type="password" id="contrasenna" name="contrasenna" placeholder="contrasenna" required="true"/>
           </div>
           <div  class="form-group">
-              <input type="submit" class="btn btn-secondary"> <!--href="javascript:;" onclick="inicioSesion($('#nombre').val(),$('#contrasenna').val());return false;" value="Login"-->  
+              <input type="submit" class="btn btn-secondary"> 
           </div>
         <span name="resultado" id="resultado"></span>
       </form>

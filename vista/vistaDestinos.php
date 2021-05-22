@@ -3,42 +3,47 @@
 ?>
 <div class="container text-center">
     <h2>Buscar Destino</h2>
-    <form style="color: black" method="post" action="?controlador=Destinos&accion=buscarDestino">
+    <form style="color: black" method="post" action="?controlador=Destinos&accion=buscarDestinos">
             <div class="form-group">
                 <label for="estadia">Tiempo de estadía</label>
                 <select id="estadia" name="estadia" required="true">
-                    <option value="De un día para otro">De un día para otro</option>
-                    <option value="Tres días">Tres días</option>
-                    <option value="Una semana">Una semana</option>
+                    <option value=1>De un día para otro</option>
+                    <option value=2>Tres días</option>
+                    <option value=3>Una semana</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="camino">Tipo de Camino</label>
                 <select id="camino" name="camino" required="true">
-                    <option value="Asfalto">Asfalto</option>
-                    <option value="Lastre">Lastre</option>
+                    <option value=1>Asfalto</option>
+                    <option value=2>Lastre</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="precios">Rango de Precios</label>
                 <select id="precios" name="precios" required="true">
-                    <option value="Opción Económica">Opción Económica</option>
-                    <option value="Opción Estándar">Opción Estándar</option>
-                    <option value="Opción Premium">Opción Premium</option>
+                    <option value=1>Opción Económica</option>
+                    <option value=2>Opción Estándar</option>
+                    <option value=3>Opción Premium</option>
                 </select>
             </div>
             <div class="form-group">
-                    <label for="precios">Cantidad de Personas</label>
-                    <input type="number" id="cantidad" name="cantidad"required="true"/>
+                <label for="cantidad">Cantidad de Personas</label>
+                <select id="cantidad" name="cantidad" required="true">
+                    <option value=1>De 1 a 2 personas</option>
+                    <option value=2>De 3 a 5 personas</option>
+                    <option value=3>De 5 a 8 personas</option>
+                </select>
             </div>
             <div class="form-group">
-                <button type="submit"class="btn btn-primary" value="buscar" method="post">Determinar el destino</button>
+                <button type="submit" class="btn btn-primary" value="buscar" method="post">Determinar el destino</button>
             </div>
+            
+          <h4 id="mensaje2"></h4>
+        </div>
+    </div>
     </form> 
-    <h4 id="mensaje2"><?php echo $vars ?></h4>
-    <button onclick="getLocation()">Try It</button>
-
-    <p id="demo"></p>
+    
 </div>
 <?php
     include_once 'publico/footer.php';

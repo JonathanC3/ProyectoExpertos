@@ -15,6 +15,14 @@ class ControladorPorDefecto{
     public function vistaCreditos(){
         $this->view->show("vistaCreditos.php", null);
     }
+    public function vistaLogin(){
+        $this->view->show("vistaLogin.php", null);
+               
+    } 
+    public function iniciarSesion(){
+        $this->view->show("vistaIndex.php", null);
+               
+    }
     
 } // fin clase
 
